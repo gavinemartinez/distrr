@@ -1,9 +1,7 @@
 Package: distrr
-Title: What the Package Does (One Line, Title Case)
+Title: displaying probability distributions
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Authors@R: c(person("Gavin", "Martinez", , "gmart111@calpoly.edu"),person("Myles", "Harp", "meharp@calpoly.edu"))
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
