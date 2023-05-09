@@ -1,8 +1,7 @@
 Package: distrr
 Title: displaying probability distributions
 Version: 0.0.0.9000
-Authors@R: 
-c(person("Gavin", "Martinez", , "gmart111@calpoly.edu"), person("Myles", "Harp", "meharp@calpoly.edu"))
+Authors@R: c(person("Gavin", "Martinez", , "gmart111@calpoly.edu"),person("Myles", "Harp", "meharp@calpoly.edu"))
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
@@ -12,3 +11,5 @@ RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Imports: 
+    magrittr
