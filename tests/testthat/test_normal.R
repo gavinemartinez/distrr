@@ -22,9 +22,10 @@ test_that("distrr returns expected output for normal inputs", {
   result <- plot_binom(mu, sigma, level, crit)
 
   expect_is(result, "numeric")
+
   expect_equal(length(result), 100)
+
   expect_equal(mean(result), mu, tolerance = 0.01)
+
   expect_equal(sd(result), sigma, tolerance = 0.01)
 })
-
-test_file("test_my_function.R")
