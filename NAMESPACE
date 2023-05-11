@@ -3,6 +3,7 @@
 export("%>%")
 export(critical_values_binom)
 export(critical_values_exp)
+export(critical_values_gamma)
 export(critical_values_norm)
 export(make_normal_df)
 export(plot_binom)
