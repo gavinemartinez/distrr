@@ -22,7 +22,7 @@ poisson_process <- function(dist, rate, shape = 1, level = .95){
     pois_plot <- ggplot(pois_data, aes(x = x, y = y, fill = color)) +
       geom_bar(stat = "identity", color = "black", alpha = 0.5) +
       scale_fill_manual(values = c("gold", "white")) +
-      xlab("Number of occurences") +
+      xlab("Number Of Occurrences") +
       ylab("Probability Density") +
       ggtitle("Poisson Distribution") +
 
@@ -53,7 +53,7 @@ poisson_process <- function(dist, rate, shape = 1, level = .95){
       geom_vline(xintercept = round(q[2]), color = "red") +
       geom_hline(yintercept = 0, color = "black") +
       ggtitle("Exponential Distribution") +
-      xlab("Time Until Occurence") +
+      xlab("Time Until Occurrence") +
       ylab("Probability Density") +
       annotate("text", x = ((rate*40) - (rate*40)*.25), y = .1, label = glue::glue("Rate Parameter = {rate}"), fontface = "bold") +
       annotate("text", x = ((rate*40) - (rate*40)*.25), y = .15, label = glue::glue("{level*100}% CI for mean: [{round(q[1], 2)}, {round(q[2], 2)}]"), fontface = "bold") +
@@ -77,7 +77,7 @@ poisson_process <- function(dist, rate, shape = 1, level = .95){
       geom_vline(xintercept = round(q[2]), color = "red") +
       geom_hline(yintercept = 0, color = "black") +
       ggtitle("Gamma Distribution") +
-      xlab("Time between occurences") +
+      xlab("Time Between Occurrences") +
       ylab("Probability Density") +
       annotate("text", x = (shape*5) - ((shape*5)*.25), y = .1, label = glue::glue("Rate Parameter = {rate}"), fontface = "bold") +
       annotate("text", x = (shape*5) - ((shape*5)*.25), y = .12, label = glue::glue("Shape Parameter = {shape}"), fontface = "bold") +
