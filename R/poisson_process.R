@@ -80,8 +80,8 @@ poisson_process <- function(dist, rate, shape = 1, level = .95){
       xlab("Time between occurences") +
       ylab("Probability Density") +
       annotate("text", x = (shape*5) - ((shape*5)*.25), y = .1, label = glue::glue("Rate Parameter = {rate}"), fontface = "bold") +
-      annotate("text", x = (shape*5) - ((shape*5)*.25), y = .11, label = glue::glue("Shape Parameter = {shape}"), fontface = "bold") +
-      annotate("text", x = (shape*5) - ((shape*5)*.25), y = .12, label = glue::glue("{level*100}% CI for mean: [{round(q[1], 2)}, {round(q[2], 2)}]"), fontface = "bold") +
+      annotate("text", x = (shape*5) - ((shape*5)*.25), y = .12, label = glue::glue("Shape Parameter = {shape}"), fontface = "bold") +
+      annotate("text", x = (shape*5) - ((shape*5)*.25), y = .14, label = glue::glue("{level*100}% CI for mean: [{round(q[1], 2)}, {round(q[2], 2)}]"), fontface = "bold") +
       geom_ribbon(data = gamma_data %>% filter(x >= round(q[1]) & x <= round(q[2])),
                   aes(ymin = 0, ymax = y, x = x),
                   fill = "gold", alpha = 0.5) +
