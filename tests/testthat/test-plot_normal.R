@@ -7,5 +7,4 @@ test_that("plot_normal works", {
   expect_equal(plot$labels$x, "Quantiles")
   expect_equal(plot$labels$y, "Probability Density")
 
-
 })

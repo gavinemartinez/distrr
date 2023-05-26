@@ -4,7 +4,7 @@
 \alias{plot_binom}
 \title{Plot the Binomial Distribution}
 \usage{
-plot_binom(n, p, level = 0.95, crit = T)
+plot_binom(n, p, level = 0.95)
 }
 \arguments{
 \item{n}{number of trials}
@@ -12,8 +12,6 @@ plot_binom(n, p, level = 0.95, crit = T)
 \item{p}{probability of success}
 
 \item{level}{confidence level}
-
-\item{crit}{(T/F) whether or not you want critical values displayed}
 }
 \value{
 A plot of the binomial distribution with user-specified details
