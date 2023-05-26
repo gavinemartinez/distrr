@@ -4,7 +4,7 @@
 \alias{plot_normal}
 \title{Plot the Normal Distribution}
 \usage{
-plot_normal(mu, sigma, level = 0.95, crit = T)
+plot_normal(mu, sigma, level = 0.95)
 }
 \arguments{
 \item{mu}{population mean}
@@ -12,8 +12,6 @@ plot_normal(mu, sigma, level = 0.95, crit = T)
 \item{sigma}{population standard deviation}
 
 \item{level}{confidence level}
-
-\item{crit}{(T/F) whether or not you want critical values displayed}
 }
 \value{
 A plot of the normal distribution with user-specified details

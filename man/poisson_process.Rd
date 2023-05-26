@@ -4,11 +4,9 @@
 \alias{poisson_process}
 \title{Specify a plot of any part of the poisson process}
 \usage{
-poisson_process(dist, rate, shape = 1, level = 0.95)
+poisson_process(rate, shape = 1, level = 0.95)
 }
 \arguments{
-\item{dist}{the specified distribution(Poisson, Exponential, Gamma)}
-
 \item{rate}{rate paramater AKA rate at which a single event occurs}
 
 \item{shape}{shape parameter (neccessary for Gamma) AKA number of events waiting to occur}
