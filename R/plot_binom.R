@@ -21,7 +21,10 @@ plot_binom <- function(n, p, level = .95){
 
  crit_plot <- crit_plot(df, level, n, p, q, ci, annotate_x)
  non_crit_plot <- non_crit_plot(df, level, n, p, q, ci, annotate_x)
- result <- list("Critical Values" = data.frame("Lower" = q[1], "Upper" = q[2]),
+ result <- list("Input" = data.frame("n" = n,
+                                     "p" = p,
+                                     "Confidence" = level),
+                "Critical Values" = data.frame("Lower" = q[1], "Upper" = q[2]),
                 "Confidence Bounds" = data.frame("Lower" = ci[1], "Upper" = ci[2]),
                 "Critical Value Plot" = crit_plot,
                 "Non-Critical Value Plot" = non_crit_plot
